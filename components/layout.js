@@ -2,6 +2,7 @@ import layoutStyles from "../styles/layout.module.css";
 import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Layout({ children }) {
 
@@ -20,9 +21,16 @@ export default function Layout({ children }) {
           </ul>
         </nav>
       </header>
-      <div>
-        {children}
-      </div>
+      <AnimatePresence exitBeforeEnter>
+        <motion.div
+          animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.15 }}
+        >
+          {children}
+        </motion.div>
+      </AnimatePresence>
     </>
   );
 }
