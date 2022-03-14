@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
+import { remark } from "remark";
+import html from "remark-html";
+import path from "path";
+import fs from "fs";
 
 const ImageComponent = ({ file, alt }) => {
   return (
@@ -13,7 +17,22 @@ const ImageComponent = ({ file, alt }) => {
   );
 };
 
-export default function Home() {
+export async function getStaticProps() {
+  const contentDirectory = path.join(process.cwd(), "content");
+
+  const fullPath = path.join(contentDirectory, "about.md");
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+
+  const aboutData = await remark()
+    .use(html)
+    .process(fileContents);
+
+  const contentHtml = aboutData.value.toString();
+  
+  return { props: { contentHtml } };
+};
+
+export default function Home({ contentHtml }) {
   return (
     <>
       <Layout>
@@ -45,7 +64,7 @@ export default function Home() {
             </ul>
           </div>
           <section className={utilStyles.col23}>
-            <p>foobar</p>
+            <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
           </section>
         </div>
       </Layout>
