@@ -5,7 +5,7 @@ export const projectsArr = [
     technology: "JavaScript, NextJS, React",
     img: "home.svg",
     imgAlt: "Icon of a house.",
-    url: "https://github.com/thukka/hukka.dev"
+    url: "https://github.com/thukka/hukka_dev"
   },
   {
     name: "Fitlogger",
