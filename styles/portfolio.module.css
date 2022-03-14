@@ -1,0 +1,77 @@
+.tile {
+    display: flex;
+    background-color: #414348;
+    max-width: 700px;
+    margin: 2rem 1rem;
+    border-radius: 5px;
+    padding: 10px 15px;
+    overflow:   hidden;
+    box-shadow: 0 0 20px rgb(0 0 0 / 90%);
+}
+
+.tile p {
+    font-size: 14px;
+}
+
+.projectInfo {
+    float: left;
+    width: 70%;
+    min-height: inherit;
+
+}
+
+.projectDescription {
+    margin-bottom: 40px;
+}
+
+.projectPic {
+    text-align: center;
+    float: right;
+    width: 30%;
+    margin: auto 0 auto 5px;
+}
+
+.linkGitHub {
+    display: flex;
+    background-color: #A691D3;
+    box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+    color: #000;
+    max-width: 125px;
+    min-height: 25px;
+    font-size: 12px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.linkGitHub:hover {
+    background-color:  #7a5bbe;
+    box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+}
+
+.linkGitHubPic {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.skill {
+    display: inline-block;
+    border: 1px solid #A691D3;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px 7px 0 0;
+    font-size: 12px;
+}
+
+.skill:last-child {
+    margin-right: 0;
+}
+
+@media only screen and (min-width: 700px) {
+    .tile {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
