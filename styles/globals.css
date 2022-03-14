@@ -1,16 +1,116 @@
-html,
-body {
-  padding: 0;
+/* 
+!!        CSS RESET       !!
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* 
+!!        hukka.dev       !!
+*/
+
+html {
+  background: #333333;
+  background: linear-gradient(140deg, #272727 50%, #333333 50%);
+  min-height: 100vh;
+}
+
+html,
+body {
+  font-family: 'Rubik', -apple-system, sans-serif;
+  color: #fff;
 }
 
 * {
   box-sizing: border-box;
+}
+
+p {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-right: 15px;
+}
+
+p a {
+  color: #A691D3;
+}
+
+p a:hover {
+  background-color:  #7a5bbe;
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+}
+
+strong {
+  font-weight: 500;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.7;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin: 0;
 }
