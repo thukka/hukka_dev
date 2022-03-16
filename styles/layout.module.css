@@ -16,6 +16,15 @@
     color: #A3E7FC;
 }
 
+.topNav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+  
+.topNav ul li:last-child {
+    margin-right: 0;
+}
+
 .active {
     border-bottom: 3px solid #A691D3;
 }

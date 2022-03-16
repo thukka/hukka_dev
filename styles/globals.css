@@ -105,12 +105,3 @@ h2 {
   font-size: 24px;
   line-height: 1.7;
 }
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li:last-child {
-  margin: 0;
-}
