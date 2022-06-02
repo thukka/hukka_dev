@@ -16,3 +16,4 @@ This project uses [remark](https://www.npmjs.com/package/remark) for the landing
 - Gmail https://freeicons.io/free-gmail-logos-icon-pack/gmail-googlemail-latter-email-icon-21518
 - Home https://freeicons.io/line-hero-essentials/essentials-home-icon-20467
 - Linkedin https://freeicons.io/social-media-4/linkedin-icon-390
+- Calculator https://freeicons.io/seo-round-corner-line-gradient/calculator-economy-calculation-mathematics-maths-finance-business-icon-48683
