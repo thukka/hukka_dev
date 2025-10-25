@@ -16,8 +16,8 @@ export default function Layout({ children }) {
       <header>
         <nav className={layoutStyles.topNav}>
           <ul>
-            <li><Link href="/"><a className={router.pathname == "/" ? layoutStyles.active : ""}>About</a></Link></li>
-            <li><Link href="/portfolio"><a className={router.pathname == "/portfolio" ? layoutStyles.active : ""}>Portfolio</a></Link></li>
+            <li><Link legacyBehavior href="/"><a className={router.pathname == "/" ? layoutStyles.active : ""}>About</a></Link></li>
+            <li><Link legacyBehavior href="/portfolio"><a className={router.pathname == "/portfolio" ? layoutStyles.active : ""}>Portfolio</a></Link></li>
           </ul>
         </nav>
       </header>
