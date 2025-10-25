@@ -11,8 +11,8 @@ const ImageComponent = ({ file, alt }) => {
     <Image
       src={`/images/${file}`}
       alt={`${alt}`}
-      width="32px"
-      height="32px"
+      width={32}
+      height={32}
     />
   );
 };
@@ -41,8 +41,8 @@ export default function Home({ contentHtml }) {
             <Image
               src="/images/profile_picture.png"
               alt="Picture of Toni"
-              width="200px"
-              height="200px"
+              width={200}
+              height={200}
             />
             <h2>Toni Hukka</h2>
             <div className={utilStyles.bioSites}>
