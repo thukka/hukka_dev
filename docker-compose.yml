@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  hukkadev:
+    build: .
+    container_name: hukkadev
+    restart: unless-stopped
+    ports:
+      - "4000:3000"
