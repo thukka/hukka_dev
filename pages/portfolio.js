@@ -15,8 +15,8 @@ const ProjectComponent = ({ name, description, technology, img, imgAlt, url }) =
             <Image
               src="/images/github_round.svg"
               alt="Link to GitHub"
-              height="15px"
-              width="15px"
+              height={15}
+              width={15}
             />
           </div>
           <span>View on GitHub</span>
@@ -31,8 +31,8 @@ const ProjectComponent = ({ name, description, technology, img, imgAlt, url }) =
         <Image
           src={`/images/projects/${img}`}
           alt={imgAlt}
-          width="150px"
-          height="150px"
+          width={150}
+          height={150}
         />
       </aside>
     </motion.div>
