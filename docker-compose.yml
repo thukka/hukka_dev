@@ -1,0 +1,7 @@
+services:
+  hukkadev:
+    build: .
+    container_name: hukkadev
+    restart: unless-stopped
+    ports:
+      - "4000:3000"
