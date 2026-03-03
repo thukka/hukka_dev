@@ -57,9 +57,8 @@ export default function Home({ contentHtml }) {
               </a>
             </div>
             <ul className={utilStyles.quickInfoList}>
-              <li>Amateur pizzaiolo.</li>
               <li>Hockey fan.</li>
-              <li>Trying to grow chilies!</li>
+              <li>"Runner."</li>
               <li>Enjoy playing video games and watching esports.</li>
             </ul>
           </div>
