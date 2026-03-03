@@ -39,7 +39,7 @@ export default function Home({ contentHtml }) {
         <div className={utilStyles.tile}>
           <div className={`${utilStyles.header} ${utilStyles.col13}`}>
             <Image
-              src="/images/profile_picture.png"
+              src="/images/profpic_2026.png"
               alt="Picture of Toni"
               width={200}
               height={200}
